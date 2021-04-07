@@ -11,8 +11,8 @@ programa
 		inteiro k = 0
 		logico temValor = falso
 		
-		inteiro vetorInteiros[tamanho] = {1, 5, 5, 1, 1, 5}
-		inteiro vetorDuplicados[tamanhoDuplicados]
+		inteiro vetorInteiros[tamanho] = {1, 7, 5, 1, 7, 5}
+		inteiro vetorDuplicados[tamanhoDuplicados] = {-1, -1, -1}
 
 //		para(inteiro i = 0; i < tamanho; i++)
 //		{
@@ -26,27 +26,7 @@ programa
 			{
 				se(vetorInteiros[i] == vetorInteiros[j])
 				{
-					se(k == 0)
-					{
-						vetorDuplicados[k] = vetorInteiros[i]
-						k++
-					}
-					senao
-					{
-						temValor = falso
-						para(inteiro l = 0; l <= k; l++)
-						{	
-							se(vetorInteiros[i] == vetorDuplicados[l])
-							{
-								temValor = verdadeiro
-							}
-						}
-						se(temValor == falso)
-						{
-							vetorDuplicados[k] = vetorInteiros[i]
-							k++
-						}
-					}
+					escreva(vetorInteiros[j], " ")
 				}
 			}
 		}
@@ -58,7 +38,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 767; 
+ * @POSICAO-CURSOR = 285; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {k, 11, 10, 1}-{temValor, 12, 9, 8}-{vetorInteiros, 14, 10, 13}-{vetorDuplicados, 15, 10, 15}-{i, 23, 15, 1}-{j, 25, 16, 1};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
